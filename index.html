@@ -1,64 +1,151 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Studio</title>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Studio</title>
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles/main.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="container container_row">
-          <a href="index.html" class="logo">
-            <span class="logo__accent">Web</span>Studio
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container container_row">
+        <a href="index.html" class="logo">
+          <span class="logo__accent">Web</span>Studio
+        </a>
+
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="index.html" class="menu__link menu__link_active">
+                Студія
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Портфоліо</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__info">
+          <a href="mailto:info@devstudio.com" class="header__email">
+            info@devstudio.com
           </a>
+          <a href="tel:+380961111111" class="header__phone">
+            +38 096 111 11 11
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="btn">Замовити послугу</button>
+        </div>
+      </section>
+      <!-- /Hero -->
 
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a href="index.html" class="menu__link menu__link_active">
-                  Студія
-                </a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Портфоліо</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-
-          <div class="header__info">
-            <a href="mailto:info@devstudio.com" class="header__email">
-              info@devstudio.com
-            </a>
-            <a href="tel:+380961111111" class="header__phone">
-              +38 096 111 11 11
-            </a>
+      <!-- Specifics -->
+      <section class="specifics">
+        <div class="container">
+          <div class="specifics__grid">
+            <article class="specifics-item">
+              <div class="specifics-item__icon-bg">
+                <img src="images/Sattelite.svg" alt="Sattelite" class="specifics-item__icon">
+              </div>
+              <h3 class="specifics-item__title">Увага до деталей</h3>
+              <p class="specifics-item__description">
+                Ідейні міркування, а також початок повсякденної роботи з формування
+                позиції.
+              </p>
+            </article>
+            <article class="specifics-item">
+              <div class="specifics-item__icon-bg">
+                <img src="images/Sattelite.svg" alt="Sattelite" class="specifics-item__icon">
+              </div>
+              <h3 class="specifics-item__title">Увага до деталей</h3>
+              <p class="specifics-item__description">
+                Ідейні міркування, а також початок повсякденної роботи з формування
+                позиції.
+              </p>
+            </article>
+            <article class="specifics-item">
+              <div class="specifics-item__icon-bg">
+                <img src="images/Sattelite.svg" alt="Sattelite" class="specifics-item__icon">
+              </div>
+              <h3 class="specifics-item__title">Увага до деталей</h3>
+              <p class="specifics-item__description">
+                Ідейні міркування, а також початок повсякденної роботи з формування
+                позиції.
+              </p>
+            </article>
+            <article class="specifics-item">
+              <div class="specifics-item__icon-bg">
+                <img src="images/Sattelite.svg" alt="Sattelite" class="specifics-item__icon">
+              </div>
+              <h3 class="specifics-item__title">Увага до деталей</h3>
+              <p class="specifics-item__description">
+                Ідейні міркування, а також початок повсякденної роботи з формування
+                позиції.
+              </p>
+            </article>
           </div>
         </div>
-      </header>
-      <main class="main">
-        <section class="hero">
-          <div class="container">
-            <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="btn">Замовити послугу</button>
-          </div>
-        </section>
-      </main>
-    </div>
-  </body>
+      </section>
+      <!-- /Specifics -->
+
+      <!-- Work -->
+      <section class="work">
+        <div class="container">
+          <h2 class="section-title">Чим ми займаємось</h2>
+
+          <ul class="work__list">
+            <li class="work__item work-item">
+              <img src="images/desktop.jpg" alt="Man coding" class="work-item__bg">
+              <div class="work-item__info">
+                <h3 class="work-item__title">
+                  Десктопні програми
+                </h3>
+              </div>
+            </li>
+            <li class="work__item work-item">
+              <img src="images/desktop.jpg" alt="Man coding" class="work-item__bg">
+              <div class="work-item__info">
+                <h3 class="work-item__title">
+                  Десктопні програми
+                </h3>
+              </div>
+            </li>
+            <li class="work__item work-item">
+              <img src="images/desktop.jpg" alt="Man coding" class="work-item__bg">
+              <div class="work-item__info">
+                <h3 class="work-item__title">
+                  Десктопні програми
+                </h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- /Work -->
+    </main>
+  </div>
+</body>
+
 </html>
