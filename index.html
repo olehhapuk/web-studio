@@ -18,6 +18,67 @@
 </head>
 
 <body>
+  <div class="modal modal_open" id="contactModal">
+    <div class="modal__content">
+      <button class="modal__close" type="button">x</button>
+      <h3 class="modal__title">Залишіть свої дані і ми вам передзвонимо</h3>
+
+      <form class="modal__form">
+
+        <div class="form-field">
+          <label for="nameInput" class="form-field__label">Ім'я</label>
+          <div class="form-field__control">
+            <!-- <img src="images/Person.svg" alt="Person" class="form-field__icon"> -->
+            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14 0H2C1.175 0 0.5075 0.675 0.5075 1.5L0.5 10.5C0.5 11.325 1.175 12 2 12H14C14.825 12 15.5 11.325 15.5 10.5V1.5C15.5 0.675 14.825 0 14 0ZM13.7 3.1875L8.3975 6.5025C8.1575 6.6525 7.8425 6.6525 7.6025 6.5025L2.3 3.1875C2.1125 3.0675 2 2.865 2 2.6475C2 2.145 2.5475 1.845 2.975 2.1075L8 5.25L13.025 2.1075C13.4525 1.845 14 2.145 14 2.6475C14 2.865 13.8875 3.0675 13.7 3.1875Z"
+                fill="#212121" />
+            </svg>
+
+            <input type="text" class="form-field__input form-field__input_icon-left" id="nameInput" autocomplete="name">
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="phoneInput" class="form-field__label">Телефон</label>
+          <div class="form-field__control">
+            <img src="images/Phone.svg" alt="Phone" class="form-field__icon">
+            <input type="tel" class="form-field__input form-field__input_icon-left" id="phoneInput" autocomplete="tel">
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="emailInput" class="form-field__label">Пошта</label>
+          <div class="form-field__control">
+            <img src="images/Envelope_input.svg" alt="Envelope" class="form-field__icon">
+            <input type="email" class="form-field__input form-field__input_icon-left" id="emailInput"
+              autocomplete="email">
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="commentInput" class="form-field__label">Коментарій</label>
+          <div class="form-field__control">
+            <textarea class="form-field__input" id="commentInput" placeholder="Введіть текст" rows="6"></textarea>
+          </div>
+        </div>
+
+        <div class="checkbox">
+          <input type="checkbox" class="checkbox__input visually-hidden" id="contactAccept">
+          <label for="contactAccept" class="checkbox__label">
+            <svg class="checkbox__icon" width="13" height="10" viewBox="0 0 13 10" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z"
+                fill="white" stroke="white" stroke-width="0.2" />
+            </svg>
+          </label>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
   <div class="wrapper">
     <header class="header">
       <div class="container container_row">
