@@ -51,6 +51,10 @@ section {
   margin-bottom: 94px;
 }
 
+textarea {
+  font-family: inherit;
+}
+
 .wrapper {
   position: relative;
   overflow: hidden;
@@ -179,10 +183,6 @@ section {
 
 /* Modal */
 
-body {
-  overflow: hidden;
-}
-
 .modal {
   position: fixed;
   top: 0;
@@ -191,6 +191,11 @@ body {
   right: 0;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 99;
+  display: none;
+}
+
+.modal_open {
+  display: block;
 }
 
 .modal__content {
@@ -199,9 +204,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   border-radius: 4px;
   padding: 40px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .modal__close {
@@ -209,6 +215,9 @@ body {
   right: 8px;
   top: 8px;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -228,6 +237,13 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
+}
+
+.modal__submit {
+  padding-left: 58px;
+  padding-right: 58px;
+  display: block;
+  margin: 0 auto;
 }
 
 .form-field:not(:last-child) {
@@ -267,6 +283,14 @@ body {
   border: 1px solid var(--accent-color);
 }
 
+.form-field__icon path {
+  transition: fill 75ms;
+}
+
+.form-field__input:focus + .form-field__icon path {
+  fill: var(--accent-color);
+}
+
 textarea.form-field__input {
   resize: vertical;
 }
@@ -279,8 +303,13 @@ textarea.form-field__input {
 
 /* Checkbox */
 
+.checkbox {
+  /* margin: top horizontal bottom; */
+  margin: 20px 12px 30px;
+}
+
 .checkbox__label {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 
@@ -288,12 +317,19 @@ textarea.form-field__input {
   height: 16px;
   border: 1px solid var(--dark-text);
   border-radius: 2px;
-  transition: background-color 75ms, border-color 75ms;
+  transition: background-color 75ms, border-color 75ms, box-shadow 300ms;
+  margin-right: 8px;
 }
 
 .checkbox__input:checked + .checkbox__label {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
+}
+
+.checkbox__input:focus + .checkbox__label {
+  /* outline: auto; */
+  /* border-color: var(--accent-color); */
+  box-shadow: 0px 0px 0px 2px var(--accent-color);
 }
 
 .checkbox__icon {
@@ -305,7 +341,25 @@ textarea.form-field__input {
   opacity: 1;
 }
 
+.checkbox__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--light-text);
+  user-select: none;
+}
+
 /* /Checkbox */
+
+/* Link */
+
+.link_underline {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+/* /Link */
 
 /* Navbar */
 

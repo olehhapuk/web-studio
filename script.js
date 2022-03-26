@@ -5,6 +5,7 @@ const closeContactModalBtnElem = document.getElementById('contactModalClose');
 function openModal() {
   contactModalElem.classList.add('modal_open');
   document.body.style.overflow = 'hidden';
+  contactModalElem.querySelector('input').focus();
 }
 
 function closeModal() {
