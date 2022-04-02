@@ -62,6 +62,12 @@
   row-gap: 50px; */
 }
 
+@media (max-width: 980px) {
+  .specifics__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* /Specifics */
 
 /* Work */
@@ -100,6 +106,16 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media (max-width: 980px) {
+  .work__list {
+    flex-direction: column;
+  }
+
+  .work-item {
+    height: 325px;
+  }
 }
 
 /* /Work */
@@ -156,6 +172,16 @@
   margin: 0 auto;
 }
 
+@media (max-width: 980px) {
+  .team__members {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .member-card__img {
+    height: 374px;
+  }
+}
+
 /* /Team */
 
 /* Clients */
@@ -186,6 +212,12 @@
 
 .clients__link:hover path {
   fill: var(--accent-color);
+}
+
+@media (max-width: 980px) {
+  .clients__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* /Clients */
