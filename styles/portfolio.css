@@ -119,4 +119,20 @@
   }
 }
 
+@media (max-width: 720px) {
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .tags__item {
+    display: block;
+    margin: 7px 0;
+  }
+
+  .tags {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+}
+
 /* /Projects */
